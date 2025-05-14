@@ -1,5 +1,5 @@
 class Teacher {
-    fullName = 'John'
-    age = 35
-    subject = 'Math'
+    fullName = 'John';
+    age = 35;
+    subject = 'Math';
 }
