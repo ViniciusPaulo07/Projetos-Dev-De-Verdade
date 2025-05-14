@@ -1,1 +1,5 @@
-console.log("Hello world!")
+class Teacher {
+    name = 'John'
+    age = 40
+    subject = 'Math'
+}
