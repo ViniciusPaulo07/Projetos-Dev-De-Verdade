@@ -5,6 +5,9 @@ let sobrenome = 'Paulo'
 
 let mensagem = `Olá, eu me chamo ${nome} ${sobrenome}`
 
+//.toUpperCase deixa tudo em maiúsculo
+//.toLowerCase deixa tudo em minúsculo
+//.legth conta a quantidade de caracteres
 console.log(mensagem.toUpperCase())
 
 let produto = 'Cocadas'
