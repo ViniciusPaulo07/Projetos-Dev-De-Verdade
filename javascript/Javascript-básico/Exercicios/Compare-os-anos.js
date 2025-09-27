@@ -19,4 +19,14 @@ function compararLivros (livroA, livroB){
     }
 }
 
-console.log (compararLivros(livro1, livro2))
+console.log (compararLivros(livr1, livr2))
+
+
+// Resolução do professor
+let livr1 = { titul: "Livro 1", autor: "Autor 1", ano: 1980 };
+let livr2 = { titul: "Livro 2", autor: "Autor 2", ano: 1990 };
+
+function compararLivrs(l1, l2) {
+  return l1.ano < l2.ano ? l1 : l2;
+  }
+console.log(compararLivrs(livr1, livr2));
