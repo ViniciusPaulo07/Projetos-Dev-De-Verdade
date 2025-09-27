@@ -19,6 +19,6 @@ frutas.pop()
 //O shift ele remove o primeiro item
 frutas.shift()
 //eles retorna dizendo quantos itens tem no array
-
+//frutas.length()
 
 let numeros = [2, 6, 3, 10, 16]
