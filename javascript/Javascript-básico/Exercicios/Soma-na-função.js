@@ -13,5 +13,4 @@ function soma(a, b) {
     return a + b;
    }
    console.log(soma(5, 3));
-//Ele colocou o cosole.log direto na function
-//E declarou os valores direto no console
+//Ele colocou os parâmetros dentro do console.log 
