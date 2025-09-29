@@ -1,0 +1,10 @@
+{
+    "nome": "Erick",
+    "idade": 50,
+    "moraSozinho": true,
+    "hobbies": ["tocar guitarra", "academia"],
+    "endereco": {
+        "rua":"rua x",
+        "bairro": "bairro y"
+    }
+}
