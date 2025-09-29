@@ -41,6 +41,7 @@ const every = numeros.every((elemento) => {
 
 //console.log(every);
 
+//Exercicios
 const produtos = [
     {nome: 'Notebook', preco: 3000},
     {nome: 'Teclado', preco: 100},
@@ -50,5 +51,21 @@ const produtos = [
 
 const buscarProduto = produtos.filter((produto) => {
     return produto.preco < 50
+})
+
+const novaLista = produtos.map((produto) => {
+    return {
+        ...produto,
+        nome: produto.nome.toUpperCase()
+    }
+})
+
+//O forEach é muito util para interar, fazer console.log, etc
+novaLista.forEach((produto) => {
+    console.log(`Nome: ${produto.nome}, Preço: R$ ${produto.preco}`)
+})
+
+const custamMaisde100 = produtos.every((produto) => {
+    return produto.preco > 100
 })
 
