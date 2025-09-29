@@ -17,3 +17,16 @@ if(b === undefined) {
 }else {
     console.log('O valor já foi definido')
 }
+
+//Exercícios - Resolução
+let variavelNull = null;
+let variavelUndefined;
+
+if (variavelNull) {
+  console.log("Variável null tem valor");
+} else {
+  console.log("Variável null não tem valor");}
+if (variavelUndefined) {
+  console.log("Variável undefined tem valor");
+} else {
+  console.log("Variável undefined não tem valor");}

@@ -1,5 +1,9 @@
-const potencia = ((a, b) => {
+const potenciacao = ((a, b) => {
     return a ** b
 } )
 
-console.log(potencia(2, 4))
+console.log(potenciacao(2, 4))
+
+// Resolução
+const potencia = (base, expoente) => base ** expoente;
+console.log(potencia(2, 3));

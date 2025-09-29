@@ -8,3 +8,11 @@ console.log (dobro)// [4, 6, 8, 10]
 
 const filtrado = resto.filter(num => num > 4)
 console.log (filtrado)// [5]
+
+
+// Resolução
+// const numeros = 10, 20, 30, 40, 50;
+
+// const [primeiro, ...resto] = numeros;
+// console.log(primeiro);
+// console.log(resto.map(num => num * 2));

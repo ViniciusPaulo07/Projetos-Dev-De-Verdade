@@ -13,3 +13,12 @@ const pessoa = JSON.parse(`
 }
 `)
 console.log(pessoa)
+
+
+// Resolução
+const objeto = { nome: "Carlos", idade: 40, cidade: "Rio de Janeiro" };
+const jsonString = JSON.stringify(objeto);
+console.log(jsonString);
+
+const objetoConvertido = JSON.parse(jsonString);
+console.log(objetoConvertido);

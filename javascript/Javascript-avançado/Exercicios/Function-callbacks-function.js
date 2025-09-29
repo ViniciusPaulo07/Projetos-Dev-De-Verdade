@@ -9,3 +9,11 @@ function dizerOi (callback) {
 }
 
 falarNome(dizerOi());
+
+// Resolução
+function executarCallback(callback) {
+  console.log("Antes da execução");
+  callback();
+  console.log("Depois da execução");
+}
+executarCallback(() => console.log("Executando a função callback"));
