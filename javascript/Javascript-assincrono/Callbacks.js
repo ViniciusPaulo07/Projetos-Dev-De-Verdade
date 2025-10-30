@@ -30,12 +30,19 @@ function cozinhar(callback) {
     }, 3000);
 }
 
-function servir() {
-    console.log("Prato servido, Bom apetitie!");
+function servir(callback) {
+    console.log("Servindo prato...");
+
+    setTimeout(() => {
+        console.log("Prato servido.");
+        callback();
+    }, 4000);
 }
 
 prepararIngredientes(() => {
     cozinhar(() => {
-        servir()
+        servir(() => {
+            console.log("Finalizado.")
+        })
     })
 })
