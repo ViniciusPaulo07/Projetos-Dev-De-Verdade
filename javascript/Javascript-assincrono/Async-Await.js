@@ -13,7 +13,7 @@ const resultado = minhaFuncaoAssincrona()
 })
 
 
-/*O await vai fazer com que a função pare de executar, e ele só vai executar com a
+/*O await vai fazer com que a função pare de executar, e ele só vai executar quando a
 promise estiver completa */
 async function buscarDados() {
     const resultado = await fetch('https://jsonplaceholder.typicode.com/posts/1')
