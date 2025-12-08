@@ -1,18 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Formulário de login, cadastro, etc. -->
     <form>
-        <!-- Campo de entrada para o nomes de usuários, senhas, emails, etc. -->
-        <input type="date" >
+      <!-- Fieldset serve para agrupar elementos relacionados em um formulário. -->
+      <fieldset>
+        <!-- Legend serve para dar um título ao fieldset -->
+        <legend>Informações Pessoais</legend>
+        <div>
+          <!-- Nome para o campo de input. -->
+          <label for="fullName">Nome Completo:</label>
+          <!-- Input = Campo de entrada para os types que podem ser nomes de usuários, senhas, emails, etc. -->
+          <!-- Id é para o campo for na label linkar a label ao input. -->
+          <!-- Name é para referenciar as informações enviadas para o back-end. -->
+          <!-- Placeholder serve para motrar uma mensagem quando o input estiver vazio. -->
+          <input
+            id="fullName"
+            type="text"
+            name="fullName"
+            placeholder="Digite seu nome completo"
+            value="Jão Pedro"
+          />
+        </div>
 
+        <div>
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="john@gmail.com"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+      <legend>O que você gosta de fazer?</legend>
+      <div>
+        <label for="music">Música</label>
+        <!-- checked atributo pré-seleciona o checkbox -->
+        <input
+          checked
+          type="checkbox"
+          value="Música"
+          id="music"
+          name="whatDoYouLike"
+        />
+      </div>
+
+      <div>
+        <label for="sports">Esportes</label>
+        <input
+          type="checkbox"
+          value="Esportes"
+          id="sports"
+          name="whatDoYouLike"
+        />
+      </div>
+
+      <div>
+        <label for="movies">Filmes</label>
+        <input
+          type="checkbox"
+          value="Filmes"
+          id="movies"
+          name="whatDoYouLike"
+        />
+      </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Senha</legend>
+      <div>
+        <label for="password">Senha:</label>
+        <input id="password" type="password" name="password" />
+      </div>
+
+      <div>
+        <label for="confirmPassword">Confirme sua senha:</label>
+        <input id="confirmPassword" type="password" name="confirmPassword" />
+      </div>
+      </fieldset>
+
+      <fieldset>
+      <legend>Você aceita os termos?</lagend>
+
+      <div>
+        <label for="accept">Sim</label>
+        <input type="radio" value="Sim" id="accept" name="terms" />
+      </div>
+
+      <div>
+        <label for="dontAccept">Não</label>
+        <!-- O tipo radio permite selecionar apenas um tentre todos-->
+        <input type="radio" value="Não" id="dontAccept" name="terms" />
+      </fieldset>
+
+      <div>
+        <label for="state">Escolha seu estado</label>
+        <!-- O Select permite você escolher qualquer uma dessas lista de opções -->
+        <select name="state" id="state">
+          <option value="SP">São Paulo</option>
+          <option value="RJ">Rio de Janeiro</option>
+         <option value="MG">Minas Gerais</option>
+        </select>
+      </div>
+
+      <fieldset:
+    
+      </fieldset>
+      <div>
+        <label for="description">Escreva um pouco sobre você</label>
+        <!-- Textarea é um campo de texto maior para escrever mais informações -->
+        <textarea
+          id="description"
+          name="description"
+          rows="5"
+          cols="10"
+        ></textarea>
+      </div>
+
+
+      </fieldset>
+      <div>
         <!-- Todo formulário deve ter um botão. -->
         <button>Cadastrar</button>
+      </div>
     </form>
-</body>
+  </body>
 </html>
