@@ -7,7 +7,10 @@
   </head>
   <body>
     <!-- Formulário de login, cadastro, etc. -->
-    <form>
+    <!-- Action define para onde os dados do formulário serão enviados. -->
+    <!-- Method define o método HTTP que será usado para enviar os dados. -->
+    <!-- GET envia os dados pela URL, POST envia os dados no corpo da requisição. -->
+    <form method="post">
       <!-- Fieldset serve para agrupar elementos relacionados em um formulário. -->
       <fieldset>
         <!-- Legend serve para dar um título ao fieldset -->
@@ -16,10 +19,12 @@
           <!-- Nome para o campo de input. -->
           <label for="fullName">Nome Completo:</label>
           <!-- Input = Campo de entrada para os types que podem ser nomes de usuários, senhas, emails, etc. -->
-          <!-- Id é para o campo for na label linkar a label ao input. -->
+          <!-- Id é para o campo for na label lincar a label ao input. -->
           <!-- Name é para referenciar as informações enviadas para o back-end. -->
-          <!-- Placeholder serve para motrar uma mensagem quando o input estiver vazio. -->
+          <!-- Placeholder serve para mostrar uma mensagem quando o input estiver vazio. -->
+          <!-- Required torna o campo obrigatório. -->
           <input
+            required 
             id="fullName"
             type="text"
             name="fullName"
@@ -88,7 +93,7 @@
       </fieldset>
 
       <fieldset>
-      <legend>Você aceita os termos?</lagend>
+      <legend>Você aceita os termos?</legend>
 
       <div>
         <label for="accept">Sim</label>
@@ -97,7 +102,7 @@
 
       <div>
         <label for="dontAccept">Não</label>
-        <!-- O tipo radio permite selecionar apenas um tentre todos-->
+        <!-- O tipo radio permite selecionar apenas um dentre todos-->
         <input type="radio" value="Não" id="dontAccept" name="terms" />
       </fieldset>
 
@@ -129,7 +134,8 @@
       </fieldset>
       <div>
         <!-- Todo formulário deve ter um botão. -->
-        <button>Cadastrar</button>
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
       </div>
     </form>
   </body>
