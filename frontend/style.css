@@ -1,18 +1,21 @@
 div {
   height: 500px;
-  background-color: red;
-  margin-bottom: 10px;
-}
-
-div p {
-  color: white;
-  font-size: 48px;
+  background-color: blue;
 }
 
 p {
-  font-size: 36px;
+  color: white;
+  font-size: 56px;
 }
 
-main section div p {
-  font-size: 64px
+/* Essa é a forma de ser mais seletivo, determinado o estilo do paragrafo que está dentro da div*/
+div > p {
+  font-size: 64px;
+}
+
+/* Apenas o primeiro span que estiver próximo ou depois de um parágrafo vai receber esse estilo
+ Para todos os spans receberem você de mudar o + por ~*/
+p ~ span {
+  font-size: 64px;
+  color: yellow;
 }
