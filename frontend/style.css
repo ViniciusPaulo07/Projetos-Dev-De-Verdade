@@ -1,14 +1,13 @@
-div {
-  background-color: blue;
-  height: 300px;
+a {
+  font-size: 56px;
+}
+
+a[href="https://facebook.com"]
+{
+  color: blue;
+}
+
+input[type="password"] {
+  color: purple;
   font-size: 64px;
-}
-
-div p {
-  color: white;
-}
-
-/* A classe é uma maneira de agrupar estilos e replicar eles para vários elementos de uma vez só */
-div .yellow {
-  color: yellow;
 }
