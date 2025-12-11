@@ -1,21 +1,14 @@
 div {
-  height: 500px;
   background-color: blue;
+  height: 300px;
+  font-size: 64px;
 }
 
-p {
+div p {
   color: white;
-  font-size: 56px;
 }
 
-/* Essa é a forma de ser mais seletivo, determinado o estilo do paragrafo que está dentro da div*/
-div > p {
-  font-size: 64px;
-}
-
-/* Apenas o primeiro span que estiver próximo ou depois de um parágrafo vai receber esse estilo
- Para todos os spans receberem você de mudar o + por ~*/
-p ~ span {
-  font-size: 64px;
+/* A classe é uma maneira de agrupar estilos e replicar eles para vários elementos de uma vez só */
+div .yellow {
   color: yellow;
 }
