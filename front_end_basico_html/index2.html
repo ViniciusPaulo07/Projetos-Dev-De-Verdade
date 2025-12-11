@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Tabela -->
+    <table>
+      <!-- O caption fornece um título para a tabela -->
+      <caption>Tabela de pre;o de produtos por KG</caption>
+      <!-- Cabeçalho da tabela -->
+      <thead>
+        <!-- O tr define uma linha na tabela -->
+        <tr>
+          <!-- th define uma célula de cabeçalho na tabela -->
+          <!-- O atributo scope indica se a célula é de cabeçalho para uma linha ou coluna -->
+          <th scope="col">Nome do produto</th>
+          <th scope="col">Peso por unidade</th>
+          <th scope="col">Preço</th>
+        </tr>
+      </thead>
+      <!-- Corpo da tabela -->
+      <tbody>
+        <tr>
+          <!-- td define uma célula padrão na tabela -->
+          <td scope="row">Arroz</td>
+          <td>1kg</td>
+          <td>R$10,00</td>
+        </tr>
+        <tr>
+          <td scope="row">Feijão</td>
+          <td>1kg</td>
+          <td>R$10,00</td>
+        </tr>
+      </tbody>
+      <!-- Rodapé da tabela -->
+      <tfoot>
+        <tr>
+          <!-- O atributo colspan define quantas colunas a célula deve abranger -->
+          <td scope="row" colspan="2">Total</td>
+          <td>R$20,00</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
