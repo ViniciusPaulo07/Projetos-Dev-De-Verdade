@@ -1,0 +1,69 @@
+/*div {
+    height: 100px;
+    width: 200px;
+    background-color: red;
+}*/
+
+/*Interface inline não pode ser alterado, ela ira ocupar o espaço necessário.
+A unica forma de alterar isso seria determinando um display block ou inline*/
+/*span {
+    background-color: blue;
+    height: 100px;
+    width: 200px;
+}*/
+
+/*div {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}*/
+
+/* div {
+    background-color: blueviolet;
+    height: 100px;
+}
+
+.segunda {
+     A margin-top ela defini um espaçamento externo entre os elementos
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin: 20px 0 0 20px;
+} */
+
+/* div {
+    background-color: blueviolet;
+    O rem é uma unidade de medida que se leva o tamanho da fonte em consideração.
+    O em também leva o tamanho da fonte em consideração mas ele leva o tamanho da fonte do elemento Pai
+    em consideração 
+    height: 3em;
+    color: white;
+    Ja o padding define o espaçamento interno
+    padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
+} */
+
+/* section {
+  width: 50%;
+}
+
+div {
+  background-color: blueviolet;
+   O uso de porcentagem é util pois torna nossa página mas responsiva se adequando largura do elemento Pai 
+  width: 50%;
+}
+ */
+
+div {
+    background-color: blueviolet;
+    height: 100vh;
+}
