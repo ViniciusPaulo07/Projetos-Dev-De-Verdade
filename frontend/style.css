@@ -1,13 +1,21 @@
-a {
-  font-size: 56px;
+div {
+  background-color: chocolate;
+  color: white;
+  padding: 20px;
 }
 
-a[href="https://facebook.com"]
-{
-  color: blue;
+section {
+  background-color: gray;
+  padding: 40px;
 }
 
-input[type="password"] {
-  color: purple;
+/*O !important prioriza sobrescrevendo sobre tudo*/
+div p {
+  font-size: 48px !important;
+}
+
+/*Mais especifico*/
+section div p {
   font-size: 64px;
+  font-weight: bold;
 }
