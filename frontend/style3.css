@@ -1,0 +1,20 @@
+/* div { */
+/*Background-color define a cor do fundo.
+  Além disso em projetos reais sera mais comum o uso de
+  números hexadecimais ou RGB para decidir as cores.*/
+/* background-color: blue; */
+/*E color define a cor do que tiver escrito.*/
+/* color: yellow; */
+/*}*/
+
+div {
+  height: 300px;
+  /* Border-width é a largura da borda */
+  border-width: 10px;
+  border-color: #000;
+  /* Border-style é o estilo da borda, o comum usado
+    é o solid */
+  border-style: solid;
+  /* Border-radius é o quanto a borda vai ficar aredondada */
+  border-radius: 2px;
+}
